@@ -9,7 +9,7 @@ using TMPro;
 public class AggiornamentoRobot : MonoBehaviour {
     
     private SubscriberPosizione subscriberPosizione;
-    
+
     //Oggetti dei Giunti
     private GameObject panda_link0;
     private GameObject panda_link1;
@@ -190,6 +190,7 @@ public class AggiornamentoRobot : MonoBehaviour {
 
     public void attivaRobot() {
         panda_link0.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+        Debug.Log(panda_link0.transform.childCount);
         panda_link1.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
         panda_link2.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
         panda_link3.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);

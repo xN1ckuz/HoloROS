@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScenaSceltaSimulazione.unity
     guid: cd3e61d0df36ba748bcd8cc02bd85c79
+  - enabled: 1
+    path: Assets/Scenes/ScenaConfermaPosizione.unity
+    guid: 8e15e2bb0042aa24da45a112e79df2bc
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: fd8370cd76435414c8cc23e93ac9b50d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 546413a43de3f0142bf63e451f9d940a, type: 2}

@@ -11,11 +11,13 @@ public class TrajectoryGenerator : MonoBehaviour
 
     private bool lettura = false;
 
-    void Start(){
+    void Start()
+    {
         subscriberTraiettoria = GameObject.Find("ROSConnector").GetComponent<SubscriberTraiettoria>();
     }
 
-    void Update(){
+    void Update()
+    {
         if (subscriberTraiettoria.getTrajectoryPoints().Count == 0)
         {
             

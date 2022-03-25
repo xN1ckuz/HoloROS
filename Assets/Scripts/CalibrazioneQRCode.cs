@@ -16,6 +16,8 @@ public class CalibrazioneQRCode : MonoBehaviour {
     private Vector3 posizionePanda;
     private Vector3 rotazionePanda;
 
+
+
     public void Calibra(){
         calibrazione = GameObject.Find("calibrazione").GetComponent<TextMeshPro>();
         qrCodesManager = GameObject.Find("QRCodesManager").GetComponent<QRCodesManager>();
@@ -27,6 +29,7 @@ public class CalibrazioneQRCode : MonoBehaviour {
             calibrazione.SetText("A calibration is already running.");
         }
     }
+
 
     IEnumerator calibraCoroutine(){
         coroutineRunning = true;
@@ -52,6 +55,7 @@ public class CalibrazioneQRCode : MonoBehaviour {
             panda.transform.Translate(vettoreTrasformazionePosizione, Space.Self);
             posizionePanda = panda.transform.position;
             rotazionePanda = panda.transform.eulerAngles;
+            yield return new WaitForSeconds(5);
             aggiornaRobot.attivaRobot();
             //Segnale Acustico di avvenuta calibrazione
             audioSource.Play();
@@ -88,4 +92,7 @@ public class CalibrazioneQRCode : MonoBehaviour {
     {
         return rotazionePanda;
     }
+
+
+
 }
